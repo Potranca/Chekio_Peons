@@ -8,7 +8,7 @@ def safe_pawns(pawns):
         
     count = 0
     for row, col in pawns_indexes:
-        if ((row - 1, col - 1) in pawns_indexes) or (row - 1, col + 1):
-            count =+ 1
+        if ((row - 1, col - 1) in pawns_indexes or (row - 1, col + 1) in pawns_indexes):
+            count += 1
     
     return count
